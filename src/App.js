@@ -49,7 +49,7 @@ function App() {
 
   useEffect(() => {
     randomizeAvatar();
-  }, []);
+  });
 
   return (
     <div className="App">
