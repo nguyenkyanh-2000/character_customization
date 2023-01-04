@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f3e46;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+  color: #cad2c5;
+}
+
+.avatar-container {
+  margin: auto;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 10px solid #84a98c;
+  padding: 50px;
+  background-color: #cad2c5;
+  top: calc(50% - 205px);
+  width: fit-content;
+}
+
+.avatar {
+  width: 200px;
+  height: 260px;
+  position: relative;
+  margin: auto;
+}
+
+.btn-randomize {
+  margin: auto;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #354f52;
+  color: #cad2c5;
+  cursor: pointer;
+}
+
+.item-list-container {
+  display: flex;
+  flex-direction: column;
+  color: #cad2c5;
+  margin: 30px;
+  align-items: center;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #cad2c5;
+  border: 10px solid #84a98c;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.item img {
+  width: 75px;
+  height: 90px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}
+
+.item.selected img {
+  background-color: #52796f;
+}
+
+@media screen and (max-width: 700px) {
+  .item-list {
+    padding: 10px;
+  }
+}
